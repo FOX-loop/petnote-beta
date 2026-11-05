@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1F6F5C">
+<title>伴獸筆記 隱私權政策</title>
+<link rel="icon" href="icons/icon-192.png">
+<style>
+:root{--bg:#FAF6EF;--surface:#FFFFFF;--ink:#1C2724;--ink2:#5A6762;--line:#E7DFD3;--primary:#1F6F5C;--soft:#DCEDE6}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1513;--surface:#17201D;--ink:#EAEFEC;--ink2:#A2B0AA;--line:#2E3A36;--primary:#7FD1B4;--soft:#17332B}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+main{max-width:720px;margin:0 auto;padding:28px 16px 56px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+header img{width:56px;height:56px;border-radius:14px;flex:none}
+h1{font-size:26px;line-height:1.3;margin:0}
+.meta{color:var(--ink2);font-size:14px;margin:0 0 20px}
+.sum{background:var(--soft);border-radius:16px;padding:16px 18px;margin:0 0 24px}
+.sum b{color:var(--primary)}
+.sum ul{margin:6px 0 0;padding-left:1.2em}
+section{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:6px 18px 10px;margin:0 0 14px}
+h2{font-size:18px;margin:14px 0 4px}
+p,li{margin:6px 0}
+ul{padding-left:1.2em}
+a{color:var(--primary)}
+.en{margin-top:28px;color:var(--ink2);font-size:15px}
+.en h2{color:var(--ink)}
+</style>
+</head>
+<body>
+<main>
+<header><img src="icons/icon-192.png" alt=""><h1>伴獸筆記 隱私權政策</h1></header>
+<p class="meta">生效日期：2026 年 11 月 2 日　｜　開發者：FOX loop</p>
+
+<div class="sum"><b>重點摘要</b>
+<ul>
+<li>你的寵物資料、照片和紀錄<b>只存在你自己的手機或瀏覽器裡</b>。</li>
+<li>我們<b>不收集、不分享、不販售</b>任何個人資料。只有在網頁版主動開啟通知時，提醒的標題與時間會暫存到通知伺服器，用來準時送出通知。</li>
+<li>如果你選擇連結 Google 帳號，備份會直接存到<b>你自己的 Google 雲端硬碟</b>，開發者看不到也拿不到。</li>
+<li>沒有帳號、沒有廣告、沒有追蹤或分析工具。</li>
+</ul></div>
+
+<section>
+<h2>1. App 會處理哪些資料</h2>
+<p>你在伴獸筆記裡輸入的內容，包括寵物名稱、生日、來家日期、狀況紀錄與說明、照片、體重、飲水量、運動與餵食紀錄、食物熱量、餵食習慣、驅蟲與預防針紀錄、美容清潔紀錄、用藥與給藥紀錄、居家測量（呼吸次數、血糖、異常事件、生活品質）、檢驗數值、病史與過敏資訊、提醒設定，都只儲存在你的裝置上：Android App 存在 App 自己的儲存空間，網頁版存在瀏覽器的本機資料庫。</p>
+<p>這些資料不會傳送到開發者或任何第三方的伺服器。開發者沒有辦法看到、取得或還原你的資料。</p>
+</section>
+
+<section>
+<h2>2. 照片</h2>
+<p>只有在你主動選擇照片或拍照時，App 才會讀取那張照片，並把縮小後的副本存在 App 裡。App 不會讀取你相簿裡的其他照片，也不會上傳任何照片。</p>
+<p><b>檢驗單自動填入：</b>辨識是在你的裝置上進行，照片和 PDF 都不會上傳，辨識完也不會保存檔案。第一次使用時，App 會從公開的程式庫網站（cdn.jsdelivr.net）下載文字辨識程式、PDF 讀取程式與辨識資料，這個下載不包含你的任何資料。</p>
+</section>
+
+<section>
+<h2>3. 通知</h2>
+<p><b>Android App：</b>驅蟲、預防針和備份提醒都是由你的手機在本機排程發出，不經過任何伺服器。</p>
+<p><b>網頁版（例如 iPhone 加入主畫面）：</b>網頁沒辦法在關閉時自己跳通知，所以如果你在「設定 → 手機通知」主動開啟通知，會把以下資料傳到開發者在 Cloudflare 上架設的通知伺服器：</p>
+<ul>
+<li>手機的推播訂閱資訊（由 Apple 或 Google 推播服務產生的一組位址與加密金鑰，不含你的姓名、電話或帳號）。</li>
+<li>接下來的提醒內容與時間，例如「麻糬的預防針提醒：貓綜合疫苗今天到期」、早上 9:00。</li>
+<li>一組隨機產生的裝置代碼，用來對應上面兩項。</li>
+</ul>
+<p>這些資料只用來在時間到時送出通知；提醒送出後就會刪除，關閉通知時會刪除全部資料。通知內容會經過加密後交給 Apple 或 Google 的推播服務轉送到你的手機。其他紀錄（狀況、照片、體重、餵食等）不會傳送。不開啟通知就不會傳送任何資料。</p>
+<p>你可以隨時在 App、手機設定或瀏覽器裡關閉通知。</p>
+</section>
+
+<section>
+<h2>4. 備份與匯出</h2>
+<p>使用「匯出備份」時，App 會在你的手機上產生備份檔，並開啟系統的分享選單，由你決定要存到哪裡，例如雲端硬碟或傳給自己。檔案存放的地方由你選擇的服務管理，適用該服務的隱私權政策。</p>
+</section>
+
+<section>
+<h2>5. Google 雲端硬碟同步與備份（選用）</h2>
+<p>你可以在「設定 → Google 雲端硬碟備份」連結自己的 Google 帳號。連結時，App 只會向 Google 要求兩項權限：</p>
+<ul>
+<li><b>雲端硬碟中「伴獸筆記專用的隱藏資料夾」</b>（drive.appdata）：只能讀寫伴獸筆記自己建立的同步與備份檔案，<b>看不到、也不會讀取你雲端硬碟裡的其他檔案</b>。</li>
+<li><b>你的 Email 地址</b>：只用來在設定頁顯示目前連結的帳號。</li>
+</ul>
+<p>存放的內容和「匯出備份」相同（寵物資料、紀錄、照片、刪除紀錄的標記），用來在你登入同一個 Google 帳號的裝置之間同步，並保留一份完整備份。資料由你的手機或瀏覽器<b>直接</b>上傳到你的 Google 雲端硬碟，不會經過開發者的伺服器，開發者也沒有辦法存取。Google 帳號的登入授權只保存在你的裝置上。</p>
+<p>你可以隨時按「取消連結」，App 會撤銷授權、停止同步並刪除裝置上的登入資訊；雲端硬碟裡的資料會保留，如要刪除，可到 Google 雲端硬碟「設定 → 管理應用程式 → 伴獸筆記 → 刪除隱藏的應用程式資料」。Google 對這些資料的處理適用 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a>。</p>
+<p>伴獸筆記對 Google API 資料的使用遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API 服務使用者資料政策</a>（包括「有限使用」要求）：這些資料只用來提供備份與還原功能，不會轉移給他人、不會用於廣告，也不會由人員閱讀。</p>
+</section>
+
+<section>
+<h2>5-1. 一起養（選用）</h2>
+<p>你可以在「設定 → 一起養」建立共養群組，或掃描夥伴的 QR code 加入，和夥伴一起記錄選定的毛孩。使用時，App 會請你登入 Google 帳號並要求以下權限：</p>
+<ul>
+<li><b>伴獸筆記自己建立的檔案</b>（drive.file）：只能讀寫伴獸筆記建立的「一起養」檔案，<b>看不到、也不會讀取你雲端硬碟裡的其他檔案</b>。</li>
+<li><b>你的名字與 Email 地址</b>：名字用來在紀錄旁顯示「誰記的」，讓夥伴知道誰餵過；Email 不會傳給其他人。</li>
+</ul>
+<p><b>資料存放與加密：</b>每位夥伴在自己的 Google 雲端硬碟有一個共用檔案，只包含建立者選定共用的毛孩資料（含大頭照）與紀錄（不含紀錄附加的照片）。檔案內容在你的裝置上用共養群組專屬的金鑰加密後才上傳，並設定成「知道連結的人可以檢視」，讓夥伴的 App 讀取；沒有金鑰的人即使拿到檔案也只看得到亂碼。金鑰只存在夥伴的裝置與邀請 QR code 裡，請不要把 QR code 分享給夥伴以外的人。</p>
+<p><b>加入共養群組的通知：</b>夥伴加入或離開時，App 會把「這位夥伴的共用檔案位置、名字與加密用的公開金鑰」<b>加密後</b>暫存在開發者的通知伺服器（Cloudflare），讓建立者的 App 取走，取走後立即刪除，30 天沒人取走也會自動刪除。伺服器無法解讀內容，也不會保存你的紀錄。</p>
+<p><b>離開與刪除：</b>你可以隨時離開共養群組（建立者可以解散共養群組或移出成員），離開時 App 會刪除你雲端硬碟裡的共用檔案；建立者解散時，共用檔案會清空成只剩「已解散」的標記（檔名會標示可以刪除），讓夥伴的 App 知道要停止同步。被移出或離開後，共養群組會更換金鑰，之後的新紀錄就無法讀取。已經同步到夥伴裝置上的紀錄，會留在他們的裝置上。</p>
+<p>伴獸筆記對 Google API 資料的使用同樣遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API 服務使用者資料政策</a>（包括「有限使用」要求），只用來提供一起養功能。</p>
+</section>
+
+<section>
+<h2>6. 網路連線</h2>
+<ul>
+<li><b>Google Play 版：</b>App 不會主動連線到開發者的伺服器，更新由 Google Play 處理；只有使用「一起養」加入或離開共養群組時，會依第 5-1 點傳送一則加密的通知。</li>
+<li><b>自行安裝的 Android 版（APK）：</b>開啟時會向 GitHub 查詢是否有新版本，只會取得版本資訊，不會傳送你的任何紀錄。</li>
+<li><b>Google 雲端硬碟同步與備份：</b>只有你連結 Google 帳號後，才會依第 5 點連線到 Google 的登入與雲端硬碟服務。</li>
+<li><b>一起養：</b>只有你建立或加入共養群組後，才會依第 5-1 點連線到 Google 雲端硬碟（讀取夥伴的共用檔案）與通知伺服器；邀請用的 QR code 產生與掃描程式會從 cdn.jsdelivr.net 下載，不包含你的資料。</li>
+<li><b>網頁版：</b>網頁由 GitHub Pages 提供，GitHub 可能依其政策記錄一般的連線資訊（例如 IP 位址）。你在網頁版輸入的資料一樣只存在瀏覽器裡；只有開啟通知時，會依第 3 點連線到通知伺服器（Cloudflare 也可能依其政策記錄一般的連線資訊）。</li>
+</ul>
+</section>
+
+<section>
+<h2>7. 資料保存與刪除</h2>
+<p>資料會一直保存在你的裝置上，直到你在 App 裡刪除，或解除安裝 App、清除瀏覽器資料。因為開發者沒有保存任何副本，刪除後無法由開發者還原，請自行定期匯出備份。</p>
+</section>
+
+<section>
+<h2>8. 兒童</h2>
+<p>伴獸筆記是給寵物飼主使用的工具，並非專為兒童設計，也不會收集任何人的個人資料，包括兒童。</p>
+</section>
+
+<section>
+<h2>9. 政策變更</h2>
+<p>如果這份政策有變更，會更新本頁並修改上方的生效日期。重大變更會在 App 的更新說明中告知。</p>
+</section>
+
+<section>
+<h2>10. 聯絡我們</h2>
+<p>對隱私權有任何問題，請寄信到 <a href="mailto:foxloop.apps@gmail.com">foxloop.apps@gmail.com</a>。</p>
+</section>
+
+<div class="en">
+<h2>Privacy Policy (English summary)</h2>
+<p>伴獸筆記 (Banshou Notes), developed by FOX loop, stores all pet profiles, records, photos and reminder settings only on your own device (app storage or the browser's local database). We do not collect, share or sell personal data. There are no accounts, ads, analytics or tracking. Photos are read only when you choose them. On Android, reminders are scheduled locally. On the web version, if you turn on notifications, your push subscription, a random device ID and the upcoming reminder titles and times are stored on our notification server (Cloudflare) solely to deliver them; reminders are deleted once sent and everything is deleted when you turn notifications off. Backups are created on your device and saved wherever you choose. If you link a Google account, your data is synced between your devices and backed up directly from each device to a hidden app-specific folder in your own Google Drive (drive.appdata scope, plus your email address to show which account is linked); the developer has no access to them, and use of Google API data complies with the Google API Services User Data Policy, including the Limited Use requirements. If you use Co-care ("一起養"), the shared pets' records (without photos) are encrypted on your device with a family key and stored in a file in your own Google Drive (drive.file scope, plus your name and email; your name is shown to your co-carers), shared by link so co-carers' apps can read it; when someone joins or leaves, an encrypted note (their file location, name and public key) is briefly relayed through our notification server and deleted once picked up or after 30 days. The developer cannot read the shared data. Contact: <a href="mailto:foxloop.apps@gmail.com">foxloop.apps@gmail.com</a>. Effective date: November 2, 2026.</p>
+</div>
+</main>
+</body>
+</html>
